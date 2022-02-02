@@ -1,0 +1,32 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.fondo {
+    background-image: url("../img/nodos.jpg");
+    object-fit: cover;
+    background-repeat: repeat;
+    height: 200vh;
+}
+
+
+.espacio-200{
+    margin-top: 200px;
+}
+
+.espacio-100{
+    margin-top: 100px;
+}
+
+.text-sm{
+    font-size: 10px;
+}
+
+
+.logo-sm{
+    height: 3em;
+    width: 3em;
+}
