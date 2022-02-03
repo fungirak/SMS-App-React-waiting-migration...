@@ -1,6 +1,5 @@
 import React from 'react';
 import logoFunguito from '../img/logoFunguito.svg';
-import '../css/Buttoncss.css';
 
 const Navegacion = () => {
   return (

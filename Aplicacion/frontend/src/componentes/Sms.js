@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import M from 'materialize-css';
+import Politicas from './Politicas';
 
 const Sms = () => {
 
@@ -87,6 +88,13 @@ const Sms = () => {
     }
   
 
+  const [visible, setVisible] = useState(false);
+
+  const handlePoliticas = () => {
+    setVisible(!visible);
+  }
+
+
   return <div>
       <>
       <div className="container  col-md-6  mt-4   ">
@@ -113,7 +121,6 @@ const Sms = () => {
           <div className="input-field col s6 ">
             <input id="telefonoDestino" type="text"  className="validate bg-light rounded mt-2  fw-bold"  disabled  />
             <label htmlFor="telefonoDestino" className="fs-6 ms-2 mb-2 mt-1">Teléfono de Fungi Agregado</label>
-            <span className="helper-text text-light " data-error="Número Inválido" data-success="Número Válido"><p className="right">Ej: 3420101010</p></span>
           </div>
         </div>
 
@@ -135,8 +142,7 @@ const Sms = () => {
 
         <div className="row col s12 text-center">
 
-            
-                <p className="text-sm text-center text-light"><a href="/Politicas">Al hacer click en enviar estas aceptando nuestra política de privacidad.</a></p>
+           
             
           <button className={`btn waves-effect waves-light ${ completo && !bloqueado ? 'bg-primary' : 'disabled' }`} type="submit"  onClick={handleToast} >
             <p className="text-light fw-bold">ENVIAR</p>
@@ -144,12 +150,17 @@ const Sms = () => {
         </div>
         
       </form>
+
+      
+      <button className="text-white text-center bg-transparent border border-none border-0" onClick={handlePoliticas} >Al hacer click en enviar aceptas nuestra política de privacidad</button>
+      
+      
     
     </div>
    
   </div>
 
-        
+        <Politicas visible={visible} />
       </>
   </div>;
 };
