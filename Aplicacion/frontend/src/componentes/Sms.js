@@ -47,7 +47,7 @@ const Sms = () => {
      
       if(!bloqueado){
       console.log('enviado')
-      fetch('https://git.heroku.com/sms-app-by-fungirak.git/sms', {
+      fetch('https://sms-app-by-fungirak.herokuapp.com/sms', {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -79,11 +79,11 @@ const Sms = () => {
 
     const handleToast = () => {
       if(window.localStorage.getItem('bloq') === false  ){
-      if(sms.nombre && sms.apellido && sms.textoMensaje && sms.telefonoEmisor) {
+      if(sms.nombre && sms.apellido && sms.textoMensaje && sms.telefonoEmisor && sms.telefonoDestino) {
         M.toast({html: 'MENSAJE ENVIADO', classes: 'rounded bg-dark  fs-5 fixed-top d-flex justify-content-center mx-auto' ,displayLength: 1500 }) ;
         }
       } else {
-        M.toast({html: 'AGUARDE 1 MINUTO PARA ENVIAR OTRO MENSAJE, <br> ANDA CORTO DE MONEY FUNGI. GRACIAS!', classes: 'rounded bg-dark  fs-5 fixed-top d-flex justify-content-center mx-auto' ,displayLength: 2500 }) ;
+        M.toast({html: '¡MENSAJE ENVIADO! AGUARDE 1 MINUTO PARA ENVIAR OTRO MENSAJE.', classes: 'rounded bg-dark  fs-5 fixed-top d-flex justify-content-center mx-auto' ,displayLength: 2500 }) ;
       }
     }
   
