@@ -47,7 +47,7 @@ const Sms = () => {
      
       if(!bloqueado){
       console.log('enviado')
-      fetch('http://localhost:4001/sms', {
+      fetch('https://git.heroku.com/sms-app-by-fungirak.git/sms', {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -83,7 +83,7 @@ const Sms = () => {
         M.toast({html: 'MENSAJE ENVIADO', classes: 'rounded bg-dark  fs-5 fixed-top d-flex justify-content-center mx-auto' ,displayLength: 1500 }) ;
         }
       } else {
-        M.toast({html: 'AGUARDE 5 MINUTOS PARA ENVIAR OTRO MENSAJE, <br> ANDA CORTO DE MONEY FUNGI. GRACIAS!', classes: 'rounded bg-dark  fs-5 fixed-top d-flex justify-content-center mx-auto' ,displayLength: 2500 }) ;
+        M.toast({html: 'AGUARDE 1 MINUTO PARA ENVIAR OTRO MENSAJE, <br> ANDA CORTO DE MONEY FUNGI. GRACIAS!', classes: 'rounded bg-dark  fs-5 fixed-top d-flex justify-content-center mx-auto' ,displayLength: 2500 }) ;
       }
     }
   
