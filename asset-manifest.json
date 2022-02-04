@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fungirak.github.io/sms-app-react/static/css/main.ca46eb81.css",
-    "main.js": "/fungirak.github.io/sms-app-react/static/js/main.11c0842d.js",
+    "main.js": "/fungirak.github.io/sms-app-react/static/js/main.04e24091.js",
     "static/media/nodos.jpg": "/fungirak.github.io/sms-app-react/static/media/nodos.046eab6deaf3632113d7.jpg",
     "static/media/logoFunguito.svg": "/fungirak.github.io/sms-app-react/static/media/logoFunguito.1b8bc6502722ba4e2e9ec5f0ab002563.svg",
     "index.html": "/fungirak.github.io/sms-app-react/index.html",
     "main.ca46eb81.css.map": "/fungirak.github.io/sms-app-react/static/css/main.ca46eb81.css.map",
-    "main.11c0842d.js.map": "/fungirak.github.io/sms-app-react/static/js/main.11c0842d.js.map"
+    "main.04e24091.js.map": "/fungirak.github.io/sms-app-react/static/js/main.04e24091.js.map"
   },
   "entrypoints": [
     "static/css/main.ca46eb81.css",
-    "static/js/main.11c0842d.js"
+    "static/js/main.04e24091.js"
   ]
 }
