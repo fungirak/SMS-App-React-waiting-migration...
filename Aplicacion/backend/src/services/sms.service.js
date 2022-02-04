@@ -14,7 +14,7 @@ exports.newSms = function (req, res, next) {
         bloqueado = false;
         console.log('servicio sms desbloqueado')
         }
-        setInterval(desbloq, 300000);
+        setInterval(desbloq, 60000);
     }
 
 
@@ -58,7 +58,7 @@ exports.newSms = function (req, res, next) {
         desbloquear();
 
     } else {
-        console.log('Aguarde 5 minutos para enviar otro mensaje, anda corto de plata el fungi, y en primer lugar este proyecto es de muestra jeje saludos.');
+        console.log('Aguarde 1 minuto para enviar otro mensaje, anda corto de plata el fungi, y en primer lugar este proyecto es de muestra jeje saludos.');
     }
 };
 

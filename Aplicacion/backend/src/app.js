@@ -15,7 +15,7 @@ const port = process.env.PORT || 4001;
 
 // Evitar problemas de red y ver las solicitudes http en consola.
 const cors = require('cors');
-const morgan = require('morgan');
+//const morgan = require('morgan');
 
 app.listen(port, () => {
     console.log('server listening on port', port);
@@ -25,7 +25,7 @@ app.listen(port, () => {
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(cors());
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 
 app.use( smsRoutes );
 
