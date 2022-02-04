@@ -32,4 +32,9 @@ app.use( smsRoutes );
 // Inicia Conexión a la base de datos MONGO DB ATLAS.
 initDB();
 
+/* GET home page. */
+app.get('/', function(req, res, next) {
+    res.json({ server: 'Express'});
+  });
+
 module.exports = app;
